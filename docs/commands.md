@@ -9750,7 +9750,7 @@ hal config repository artifactory search add SEARCH [parameters]
 `SEARCH`: The name of the search to operate on.
  * `--base-url`: (*Required*) The base url your artifactory search is reachable at.
  * `--deployment`: If supplied, use this Halyard deployment. This will _not_ create a new deployment.
- * `--groupId`: (*Required*) The group id in your artifactory to be searched.
+ * `--groupId`: (*Required* if `--repo-type` is `maven` or unspecified) The group id in your artifactory to be searched.
  * `--no-validate`: (*Default*: `false`) Skip validation.
  * `--password`: (*Required*) (*Sensitive data* - user will be prompted on standard input) The password of the artifactory user to authenticate as.
  * `--read-permissions`: (*Default*: `[]`) A user must have at least one of these roles in order to view this build search or use it as a trigger source.
